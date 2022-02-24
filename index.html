@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/seedrandom/3.0.5/seedrandom.min.js"></script>
+  </head>
+  <body>
+    <div class="center">
+      <div class="row">
+        <p>Frase:</p>
+        <input type="text" name="frase" id="frase" />
+      </div>
+      <div class="row">
+        <p>Site:</p>
+        <input type="text" name="site" id="site" />
+      </div>
+      <div class="row">
+        <p>Login:</p>
+        <input type="text" name="login" id="login" />
+      </div>
+      <div class="row">
+        <div class="check">
+          <input type="checkbox" id="minuscula" name="minuscula" checked />
+          <label for="minuscula">Minuscula</label>
+        </div>
+        <div class="check">
+          <input type="checkbox" id="maiuscula" name="maiuscula" checked />
+          <label for="maiuscula">Maiuscula</label>
+        </div>
+        <div class="check">
+          <input type="checkbox" id="numeros" name="numeros" checked />
+          <label for="numeros">Números</label>
+        </div>
+        <div class="check">
+          <input type="checkbox" id="especial" name="especial" checked />
+          <label for="especial">Especial</label>
+        </div>
+        <div class="check">
+          <p>Tamanho:</p>
+          <input type="number" name="tamanho" id="tamanho" value="8" />
+        </div>
+      </div>
+      <div class="row">
+        <input type="button" value="Gerar Senha" onClick="geraSenha();" />
+      </div>
+      <div class="row">
+        <p>Senha:</p>
+        <div class="senha"></div>
+      </div>
+      <script src="main.js"></script>
+    </div>
+  </body>
+</html>
