@@ -139,12 +139,12 @@ function geraSenha() {
   config.login = document.querySelector('#login').value
   config.configSenha = {}
   config.configSenha.maiuscula =
-    document.querySelector('#maiuscula').value === 'on'
+    document.querySelector('#maiuscula').checked
   config.configSenha.minuscula =
-    document.querySelector('#minuscula').value === 'on'
-  config.configSenha.numeros = document.querySelector('#numeros').value === 'on'
+    document.querySelector('#minuscula').checked
+  config.configSenha.numeros = document.querySelector('#numeros').checked
   config.configSenha.especial =
-    document.querySelector('#especial').value === 'on'
+    document.querySelector('#especial').checked
   config.configSenha.tamanho = Number(document.querySelector('#tamanho').value)
   console.log(config)
   //config generator
